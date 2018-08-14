@@ -4,7 +4,7 @@ This repository contains the course material used for the Ergaenzungsfach / Wahl
 
 ## Authors
 
-* **Thomas Graf** - *Initial work* - [PurpleBooth](https://github.com/ThomasGrafCode)
+* **Thomas Graf**: [(GitHub Page)](https://github.com/ThomasGrafCode)
 
 ## License
 
