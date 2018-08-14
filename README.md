@@ -9,4 +9,3 @@ This repository is used to upload and share the course material used in the "Erg
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
