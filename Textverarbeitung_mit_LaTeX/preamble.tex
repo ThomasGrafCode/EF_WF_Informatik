@@ -1,0 +1,83 @@
+%%%% packages %%%%
+
+% input and output encodings
+\usepackage[utf8]{inputenc} % input font encoding that supports special characters
+\usepackage[T1]{fontenc} % output font encoding that supports special characters
+
+% language settings
+% German-specific commands
+\usepackage[ngerman]{babel}
+% English-specific commands
+%\usepackage[english]{babel}
+
+\usepackage[hang]{footmisc} % left aligned footnotes / multiple footnotes
+
+% hyper-links
+\usepackage[colorlinks = true, % colored hyper-links
+			pagebackref = true, % allows to add links in the bibliography
+			breaklinks = true, % allows for multi-lined hyper-links
+            urlcolor = blue, % color of external hyper-links
+            linkcolor = red % color of internal hyper-links
+]{hyperref}
+
+\hypersetup{linkcolor=black} % set the link color to black
+
+% graphics
+\usepackage{graphicx} % to include graphics
+\usepackage{sidecap} %  defines environments called SCfigure and SCtable (analogous to figure and table) to typeset captions sideways.
+\usepackage{caption} %  provides many ways to customise the captions in floating environments
+
+% drawing
+\usepackage{tikz} % to draw figures with tikz
+
+% colors
+\usepackage{xcolor} % provides several kinds of color tints shades, tones etc.
+
+% enumerations
+\usepackage{enumerate} % adds an optional argument to the enumerate environment which determines the style in which the counter is printed
+
+% mathematics
+\usepackage{amsmath} % miscellaneous enhancements for structure of documents containing mathematical formulas
+\usepackage{amssymb} % extended collection of mathematical symbols
+\usepackage{amscd} % mathematical commutative arrow diagrams
+\usepackage{amsthm} % environments for theorems and lemmas etc.
+\usepackage{bm} % bold math
+
+% spacing
+\usepackage{lscape} % landscape pages in a portrait document
+\usepackage{setspace} % spaces between lines
+
+% listings
+\usepackage{minted} % to insert code
+
+% quotation
+\usepackage{csquotes} % quoting environment
+
+\usepackage{enumitem} % provides user control over the layout of the three basic list environments: enumerate, itemize and description
+
+\usepackage[framemethod=TikZ]{mdframed} % develops the facilities of framed in providing breakable framed and coloured boxes
+%%%%%%%%%%%%%%%%%%
+
+% \setcounter{chapter}{-1} % to start with chapter 0 not chapter 1
+
+\usepackage{tocbibind} % include list of figures, tables and bibliography in the table of contents (toc)
+
+% to modify the position of the page numbering
+\usepackage{fancyhdr} % to modify headers
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage} % page number in the bottom center
+\rfoot{}
+
+\usepackage{marvosym} % adds many symbols
+
+% setup for theorems
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
