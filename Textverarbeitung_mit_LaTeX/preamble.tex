@@ -75,9 +75,19 @@
 \cfoot{\thepage} % page number in the bottom center
 \rfoot{}
 
+% additional symbols
 \usepackage{marvosym} % adds many symbols
+\usepackage{skak} % more symbols
+\usepackage{svrsymbols}
 
 % setup for theorems
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{corollary}{Corollary}[theorem]
-\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{definition}{Definition}
+
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedtheorem}{Theorem}
+
+
+\usepackage[textwidth=18cm]{geometry}
+\usepackage{scrextend}
